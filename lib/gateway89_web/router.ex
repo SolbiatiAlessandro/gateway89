@@ -17,7 +17,8 @@ defmodule Gateway89Web.Router do
     pipe_through :api
 
     resources("/players", PlayerController)
-    resources("/", HomeController)
+	get "/", HomeController, :index
+	get "/start", HomeController, :start_player
   end
 
   # Other scopes may use custom stacks.

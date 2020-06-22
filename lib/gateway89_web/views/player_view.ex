@@ -11,8 +11,6 @@ defmodule Gateway89Web.PlayerView do
   end
 
   def render("player.json", %{player: player}) do
-    %{id: player.id,
-      name: player.name,
-      barions: player.barions}
+    %{name: player.name, barions: player.barions}
   end
 end
