@@ -11,7 +11,7 @@ use Mix.Config
 # before starting your production server.
 config :gateway89, Gateway89Web.Endpoint,
   http: [port: {:system, "PORT"}],
-  url: [scheme: "https", host: "gateway89.com", port: 443],
+  url: [scheme: "https", host: "www.gateway89.com", port: 443],
   force_ssl: [rewrite_on: [:x_forwarded_proto]],
   cache_static_manifest: "priv/static/cache_manifest.json"
 
